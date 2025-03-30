@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência de Viagens</title>
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">🌍 Agência de Viagens</a>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Cadastre seu Pacote de Viagem</h2>
+
+        <!-- Formulário -->
+        <form id="form-pacote" class="card p-4 shadow">
+            <div class="row">
+                <div class="col-md-6">
+                    <label class="form-label">Nome do Pacote:</label>
+                    <input type="text" id="nome" class="form-control" required>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Destino:</label>
+                    <input type="text" id="destino" class="form-control" required>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <label class="form-label">Data de Início:</label>
+                    <input type="date" id="data_inicio" class="form-control" required>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Data de Fim:</label>
+                    <input type="date" id="data_fim" class="form-control" required>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <label class="form-label">Preço (R$):</label>
+                    <input type="number" id="preco" class="form-control" required step="0.01">
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-success mt-4">Cadastrar Pacote</button>
+        </form>
+    </div>
+
+    <!-- Tabela de Pacotes -->
+    <div class="container mt-5">
+        <h2 class="text-center">Pacotes Cadastrados</h2>
+
+        <table class="table table-striped table-bordered mt-3">
+            <thead class="table-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Destino</th>
+                    <th>Data Início</th
